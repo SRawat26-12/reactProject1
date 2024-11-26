@@ -14,7 +14,6 @@ const ProductSearch=()=>{
     const [mydata, setMydata]=useState([]);
     const [isLoading, setIsLoading]= useState(true);
     const dispatch= useDispatch();    
-
     useEffect(()=>{
         setTimeout(()=>{
             setIsLoading(false);
@@ -62,7 +61,7 @@ const ProductSearch=()=>{
           <Card.Img variant="top" src={key.image} />
           <Card.Body>
             <Card.Title> {key.name} </Card.Title>
-            <h4  style={{color:"blue", fontSize:"14px"}}>  Brand : { key.brand} 
+            <h4  style={{color:"blue", fontSize:"14px"}}>Brand : { key.brand} 
     
              {" "}  For - {key.category}
             </h4>
